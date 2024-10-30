@@ -4,4 +4,5 @@ import com.ra.model.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CustomerRepository extends JpaRepository<Customer,Long> {
+    Boolean existsCustomerByEmail(String email);
 }
